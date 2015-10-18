@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>芸芸</title>
+    <title>第一篇日志 | 芸芸</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="FengYunYun">
+    
+    <meta name="description" content="这里是芸芸大神的第一篇日至，欢迎大家来到这里。Welcome~
+ps：如果你想写新的日志的话，请将这个或者其他的复制一份，然后修改标题，标签，时间，内容即可。">
     
     
     
@@ -58,40 +61,73 @@
 
     </header>
     <div id="container">
-      <div id="main">
-
-  <section class="[page]" itemscope itemprop="blogPost">
-  
-    <a href="/2015/10/18/第一篇日志/" title="第一篇日志" itemprop="url">
-  
-    <h1 itemprop="name">第一篇日志</h1>
+      <div id="main" class="[page]" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
     
-     
-           <p itemprop="description" >这里是芸芸大神的第一篇日至，欢迎大家来到这里。Welcome~
-ps：如果你想写新的日志的话，请将这个或者其他的复制一份，然后修改标题，标签，时间，内容即可。</p>
-        
+      <a href="/2015/10/18/第一篇日志/" title="第一篇日志" itemprop="url">第一篇日志</a>
+  </h1>
+  <p class="article-author">By
     
+      <a href="http://yoursite.com" title="FengYunYun">FengYunYun</a>
+    </p>
+  <p class="article-time">
     <time datetime="2015-10-18T09:23:04.000Z" itemprop="datePublished">2015-10-18</time>
-  </a>
-</section>
-
-  <section class="[page]" itemscope itemprop="blogPost">
-  
-    <a href="/2015/08/13/盒模型/" title="盒模型" itemprop="url">
-  
-    <h1 itemprop="name">盒模型</h1>
+    更新日期:<time datetime="2015-10-18T09:23:21.123Z" itemprop="dateModified">2015-10-18</time>
     
-     
-       <p itemprop="description" >这一篇作为格式测试~
-盒模型的介绍在学习html或者安卓布局的时候，经常会涉及到边框，内边距，外边距等概念，如果不有意地去梳理，很难去理解具体指的是哪个距离。每一个布局文件都是一个盒模型。</p>
-      
-    
-    <time datetime="2015-08-13T05:21:04.000Z" itemprop="datePublished">2015-08-13</time>
-  </a>
-</section>
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+		</div>
+		
+		<p>这里是芸芸大神的第一篇日至，欢迎大家来到这里。<br>Welcome~</p>
+<p>ps：如果你想写新的日志的话，请将这个或者其他的复制一份，然后修改标题，标签，时间，内容即可。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
 
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/日志/">日志</a>
+  </div>
+
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://yoursite.com/2015/10/18/第一篇日志/" data-title="第一篇日志 | 芸芸" data-tsina="null" class="share clearfix">
+  </div>
 
 </div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/08/13/盒模型/"  title="盒模型">
+ <strong>NEXT:</strong><br/> 
+ <span>盒模型
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
 
 <div id="asidepart">
@@ -169,6 +205,8 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
@@ -185,6 +223,38 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
 });
 </script>
 
